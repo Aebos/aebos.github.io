@@ -10,6 +10,13 @@ p {
 
     color: #93b7be;
 }
+a {
+    color: #d4f5f5;
+    text-decoration: none;
+}
+hr {
+    border-color: #8c9a9e;
+}
 .header {
     text-align: center;
 }
@@ -19,20 +26,28 @@ p {
     row-gap: 60px;
     column-gap: 120px;
     padding: 30px;
-    max-width: 1000px;
+    max-width: 100rem;
+    min-height: 50rem;
     margin: 0 auto;
 }
 .grid-container > div {
     border-radius: 10px;
     outline: #8c9a9e solid 1px;
+    font-size: 20px;
 }
 
 #about {
-    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
     color: #93b7be;
+    min-width: 30em;
 }
 #projects {
-    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
     color: #93b7be;
     grid-column: 2;
     grid-row: 1 / span 2;
@@ -46,6 +61,9 @@ p {
     text-align: center;
     font-size: 30px;
     color: #d4f5f5;
+}
+#links {
+    text-align: center;
 }
 
 ::-webkit-scrollbar {
