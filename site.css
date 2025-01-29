@@ -20,11 +20,12 @@ hr {
 .header {
     text-align: center;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
-    row-gap: 60px;
-    column-gap: 120px;
+    row-gap: 40px;
+    column-gap: 60px;
     padding: 30px;
     max-width: 100rem;
     min-height: 50rem;
@@ -42,7 +43,6 @@ hr {
     justify-content: space-between;
     padding: 20px;
     color: #93b7be;
-    min-width: 30em;
 }
 #projects {
     display: flex;
@@ -64,6 +64,15 @@ hr {
 }
 #links {
     text-align: center;
+}
+#navbar {
+    color: #93b7be;
+    font-size:25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 60%;
+    margin: 0 auto;
 }
 
 ::-webkit-scrollbar {
