@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/css/site.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <title>Aebos</title>
+    </head>
+    <body>
+
+<pre id="logo">
+,---.     |                  
+|---|,---.|---.,---.,---.    
+|   ||---'|   ||   |`---.    
+`   '`---'`---'`---'`---'.dev</pre>
+        <nav id="navbar">
+            <a href="/">Home</a>
+            <a>Projects</a>
+            <a>??????</a>
+        </nav>
+        <a href="/">Back</a>
+
+        <div id="content"></div>
+        <script src="/marked.min.js"></script>
+        <script>
+          const urlParams = new URLSearchParams(window.location.search);
+          const postTitle = urlParams.get('post'); // e.g., 'post1'
+      
+          if (postTitle) {
+            const postUrl = `/posts/${postTitle}.md`;
+
+            fetch(postUrl)
+              .then(response => response.text())
+              .then(markdown => {
+                document.getElementById('content').innerHTML = marked.parse(markdown);
+              })
+              .catch(error => {
+                document.getElementById('content').innerHTML = `<p>Error: ${error}</p>`;
+              });
+          } else {
+            document.getElementById('content').innerHTML = '<p>No post</p>';
+          }
+        </script>
+
+        <footer>
+            (c) Aebos 2025
+        </footer>
+    </body>
+</html>

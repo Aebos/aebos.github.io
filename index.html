@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="site.css">
+        <link rel="stylesheet" href="/css/site.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="icon" type="image/x-icon" href="favicon.ico" />
         <title>
@@ -15,13 +15,13 @@
 |---|,---.|---.,---.,---.    
 |   ||---'|   ||   |`---.    
 `   '`---'`---'`---'`---'.dev</pre>
-        <div id="navbar">
-            <div>Home</div>
-            <div>Projects</div>
-            <div>??????</div>
-        </div>
-        <div class="grid-container">
-            <div id="about">
+        <nav id="navbar">
+            <a href="/">Home</a>
+            <a>Projects</a>
+            <a>??????</a>
+        </nav>
+        <main class="grid-container">
+            <section id="about">
                 Developer(?)<br>
                 <div id="links">
                     <hr>
@@ -41,16 +41,36 @@
                         | <i class="fab fa-x"></i> @aebosdev
                     </a>
                 </div>
-            </div>
-            <div id="projects">
-                project<br>
-                project<br>
-                project<br>
-                project<br>
-            </div>
-            <div id="fun">
+            </section>
+            <section id="posts">
+                <div class="postitem">
+                    <a href="view.html?post=post1">This is my first post</a>
+                    <div class="postinfo">
+                        10.9.2024<br>
+                        18.10
+                    </div>
+                </div>
+                <div class="postitem">
+                    <a href="view.html?post=post1">This is my first post</a>
+                    <div class="postinfo">
+                        10.9.2024<br>
+                        18.10
+                    </div>
+                </div>
+                <div class="postitem">
+                    <a href="view.html?post=post1">This is my amazing post</a>
+                    <div class="postinfo">
+                        10.9.2024<br>
+                        18.10
+                    </div>
+                </div>
+            </section>
+            <section id="fun">
                 Something fun here
-            </div>
-        </div>
+            </section>
+        </main>
+        <footer>
+            (c) Aebos 2025
+        </footer>
     </body>
 </html>

@@ -1,5 +1,6 @@
 body {
     background-color: #121121;
+    color: #93b7be;
     font-family: monospace;
 }
 h1 {
@@ -7,7 +8,6 @@ h1 {
     color: #d4f5f5;
 }
 p {
-
     color: #93b7be;
 }
 a {
@@ -22,28 +22,50 @@ a:hover {
 hr {
     border-color: #8c9a9e;
 }
+footer {
+    color: #93b7be;
+    text-align: center;
+}
+
 .header {
     text-align: center;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 2fr 1fr;
     row-gap: 40px;
     column-gap: 60px;
     padding: 30px;
     max-width: 100rem;
-    min-height: 50rem;
+    min-height: 60rem;
     margin: 0 auto;
 }
-.grid-container > div {
-    border-radius: 10px;
-    outline: #8c9a9e solid 1px;
+.grid-container > section {
+    border-radius: 2px;
+    outline: #8c9a9e solid 2px;
     font-size: 20px;
 }
 
 .nowrap {
     white-space: nowrap;
+}
+.postitem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    flex-direction: row;
+    column-gap: 20px;
+    outline: #8c9a9e solid 2px;
+    margin: 5px 5px 20px;
+    border-radius: 2px;
+}
+
+.postinfo {
+    font-size: 12px;
+    text-align: right;
+    margin-left: 10px;
 }
 
 #about {
@@ -53,14 +75,15 @@ hr {
     padding: 20px;
     color: #93b7be;
 }
-#projects {
+#posts {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 1rem;
     color: #93b7be;
     grid-column: 2;
     grid-row: 1 / span 2;
 }
+
 #fun {
     padding: 40px;
     color: #93b7be;
