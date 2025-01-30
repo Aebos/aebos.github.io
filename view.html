@@ -18,13 +18,14 @@
             <a>Projects</a>
             <a>??????</a>
         </nav>
-        <a href="/">Back</a>
-
+        <div id="backbutton">
+          <a href="/"><- Back</a>
+        </div>
         <div id="content"></div>
         <script src="/marked.min.js"></script>
         <script>
           const urlParams = new URLSearchParams(window.location.search);
-          const postTitle = urlParams.get('post'); // e.g., 'post1'
+          const postTitle = urlParams.get('p');
       
           if (postTitle) {
             const postUrl = `/posts/${postTitle}.md`;
